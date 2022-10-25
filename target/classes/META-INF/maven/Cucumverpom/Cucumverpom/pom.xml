@@ -18,7 +18,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<junit.version>4.13.1</junit.version>
-		<cucumber.version>7.0.0</cucumber.version>
+		<cucumber.version>6.9.0</cucumber.version>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
 		<maven.compiler.source>1.8</maven.compiler.source> 
@@ -27,27 +27,6 @@
 	</properties>
 
 	<dependencies>
-	
-	
-	
-	 <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.8</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>klov-reporter</artifactId>
-            <version>5.0.8</version>
-        </dependency>
-
-	
-	
-	
-	
-	
-    
 
 
 <dependency>
@@ -62,12 +41,6 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
-		<dependency>
-    <groupId>net.masterthought</groupId>
-    <artifactId>cucumber-reporting</artifactId>
-    <version>3.15.0</version>
-</dependency>
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -95,31 +68,21 @@
 			<version>4.2.2</version>
 		</dependency>
 		
- <dependency>
-            <groupId>tech.grasshopper</groupId>
-            <artifactId>extent-pdf-report</artifactId>
-            <version>1.7.3</version>
-        </dependency>
+
 
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
-			<artifactId>extentreports-cucumber7-adapter</artifactId>
-			<version>1.1.0</version>
+			<artifactId>extentreports-cucumber6-adapter</artifactId>
+			<version>2.8.0</version>
 			<scope>test</scope>
 			
 		</dependency>
-		
-		 <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>2.17.2</version>
-        </dependency>
 		
 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
 

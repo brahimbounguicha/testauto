@@ -1,4 +1,81 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"027cddb6-a5b8-4201-be58-aab04dcc6027","feature":"Login page feature","scenario":"Login page title","start":1666695749238,"group":19,"content":"","tags":"","end":1666695758943,"className":"passed"},{"id":"fdd05454-4c1e-41df-9b8a-71c8e0d3c77e","feature":"Account Page Feature","scenario":"Accounts page title","start":1666695749236,"group":17,"content":"","tags":"@accounts,","end":1666695767960,"className":"passed"},{"id":"f9973472-dc76-4956-a505-9b4fa929689f","feature":"Account Page Feature","scenario":"Accounts section count","start":1666695749238,"group":18,"content":"","tags":"@accounts,","end":1666695767936,"className":"passed"},{"id":"da7726bb-fe60-4cea-872d-c845dd68abee","feature":"Login page feature","scenario":"Forgot Password link","start":1666695749236,"group":20,"content":"","tags":"","end":1666695758772,"className":"passed"},{"id":"33862abe-22db-4f68-9504-8cf8f2b875f8","feature":"Login page feature","scenario":"Login with correct credentials","start":1666695749238,"group":21,"content":"","tags":"","end":1666695768642,"className":"passed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":17,"content":"Thread[TestNG-PoolService-0,5,main]"},{"id":18,"content":"Thread[TestNG-PoolService-1,5,main]"},{"id":19,"content":"Thread[TestNG-PoolService-2,5,main]"},{"id":20,"content":"Thread[TestNG-PoolService-3,5,main]"},{"id":21,"content":"Thread[TestNG-PoolService-4,5,main]"}]);
+CucumberHTML.timelineItems.pushArray([
+  {
+    "id": "21cb2ac5-5104-49c9-bc56-11b74d9b24bd",
+    "feature": "Login page feature",
+    "scenario": "Forgot Password link",
+    "start": 1666707682129,
+    "group": 22,
+    "content": "",
+    "tags": "",
+    "end": 1666707685057,
+    "className": "failed"
+  },
+  {
+    "id": "09734d5e-bdf0-4049-86a0-3040f1122306",
+    "feature": "Login page feature",
+    "scenario": "Login with correct credentials",
+    "start": 1666707682180,
+    "group": 23,
+    "content": "",
+    "tags": "",
+    "end": 1666707685082,
+    "className": "failed"
+  },
+  {
+    "id": "83dbf4fc-459e-49b3-aecb-08677287cf26",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts section count",
+    "start": 1666707682181,
+    "group": 20,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1666707729744,
+    "className": "passed"
+  },
+  {
+    "id": "3161bd6d-b1d7-4516-9749-c5cfbcb3748c",
+    "feature": "Login page feature",
+    "scenario": "Login page title",
+    "start": 1666707682181,
+    "group": 21,
+    "content": "",
+    "tags": "",
+    "end": 1666707700979,
+    "className": "passed"
+  },
+  {
+    "id": "7ca4d41f-a28f-4cb1-82f6-273904fa998f",
+    "feature": "Account Page Feature",
+    "scenario": "Accounts page title",
+    "start": 1666707682182,
+    "group": 19,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1666707726165,
+    "className": "passed"
+  }
+]);
+CucumberHTML.timelineGroups.pushArray([
+  {
+    "id": 19,
+    "content": "Thread[TestNG-PoolService-0,5,main]"
+  },
+  {
+    "id": 20,
+    "content": "Thread[TestNG-PoolService-1,5,main]"
+  },
+  {
+    "id": 21,
+    "content": "Thread[TestNG-PoolService-2,5,main]"
+  },
+  {
+    "id": 22,
+    "content": "Thread[TestNG-PoolService-3,5,main]"
+  },
+  {
+    "id": 23,
+    "content": "Thread[TestNG-PoolService-4,5,main]"
+  }
+]);
 });
