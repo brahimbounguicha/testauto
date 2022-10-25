@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">oct. 21, 2022 04:08:05 PM</span></a>
+<a href="#"><span class="badge badge-primary">oct. 25, 2022 12:26:09 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>oct. 21, 2022 04:08:05 PM</h3>
+<h3>oct. 25, 2022 12:26:09 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>oct. 21, 2022 04:08:32 PM</h3>
+<h3>oct. 25, 2022 12:26:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>5</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>19</b> steps passed</small></div>
+<div><small data-tooltip='29%'><b>7</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='41%'><b>10</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":26.275,"Account Page Feature":26.106
+"Login page feature":17.549,"Account Page Feature":16.288
 };
 </script>
 <div class="row">
@@ -173,11 +178,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@accounts</td>
+<td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -214,21 +219,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 0,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 5,
-failChild: 0,
+passChild: 0,
+failChild: 5,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 19,
-failGrandChild: 0,
+passGrandChild: 7,
+failGrandChild: 10,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 7,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -242,7 +247,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -256,25 +261,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>16:08:06</span> / <span>00:00:26:275</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:26:10</span> / <span>00:00:17:549</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>10.21.2022 16:08:06</span>
-<span class='badge badge-danger'>10.21.2022 16:08:32</span>
-<span class='badge badge-default'>00:00:26:275</span>
+<h5 class="test-status text-fail">Login page feature</h5>
+<span class='badge badge-success'>10.25.2022 12:26:10</span>
+<span class='badge badge-danger'>10.25.2022 12:26:28</span>
+<span class='badge badge-default'>00:00:17:549</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -286,19 +291,77 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Forgot Password link</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Forgot Password link</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="parallel.loginStep.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.forgot_your_password_link_should_be_displayed()">
+              <div class="step fail-bg" title="parallel.loginStep.forgot_your_password_link_should_be_displayed()">
                 <span>Then forgot your password link should be displayed</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c00cb5f706d251c807b61ce5f9febf55
+*** Element info: {Using=xpath, value=//a[@title='Recover your forgotten password']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+	at parallel.loginStep.forgot_your_password_link_should_be_displayed(loginStep.java:34)
+	at ✽.forgot your password link should be displayed(file:///C:/Users/bbounguicha/Downloads/pp/Cucumverpom/src/test/ressources/parallel/LoginPage.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c00cb5f706d251c807b61ce5f9febf55
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at parallel.ApplicationHook.tearDown(ApplicationHook.java:48)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -307,24 +370,79 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
+        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Login page title</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="parallel.loginStep.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.user_gets_the_title_of_the_page()">
+              <div class="step fail-bg" title="parallel.loginStep.user_gets_the_title_of_the_page()">
                 <span>When user gets the title of the page</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca2c05ba8ed164a94a970a266a1eea1b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.Pages.LoginPage.getLoginPageTitle(LoginPage.java:24)
+	at parallel.loginStep.user_gets_the_title_of_the_page(loginStep.java:23)
+	at ✽.user gets the title of the page(file:///C:/Users/bbounguicha/Downloads/pp/Cucumverpom/src/test/ressources/parallel/LoginPage.feature:5)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.page_title_should_be(java.lang.String)">
+              <div class="step skip-bg" title="parallel.loginStep.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "Login - My Store"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca2c05ba8ed164a94a970a266a1eea1b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at parallel.ApplicationHook.tearDown(ApplicationHook.java:48)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -333,10 +451,10 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Login with correct credentials</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="parallel.loginStep.user_is_on_login_page()">
                 <span>Given user is on login page</span>
@@ -363,9 +481,46 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.page_of_title_should_be(java.lang.String)">
+              <div class="step fail-bg" title="parallel.loginStep.page_of_title_should_be(java.lang.String)">
                 <span>And page of the title should be "My account - My Store"</span>
       <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.loginStep.page_of_title_should_be(loginStep.java:59)
+	at ✽.page of the title should be "My account - My Store"(file:///C:/Users/bbounguicha/Downloads/pp/Cucumverpom/src/test/ressources/parallel/LoginPage.feature:18)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 69d4b435d3c1272035da6857dc43691f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at parallel.ApplicationHook.tearDown(ApplicationHook.java:48)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -374,25 +529,25 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>16:08:06</span> / <span>00:00:26:106</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:26:10</span> / <span>00:00:16:288</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Account Page Feature</h5>
-<span class='badge badge-success'>10.21.2022 16:08:06</span>
-<span class='badge badge-danger'>10.21.2022 16:08:32</span>
-<span class='badge badge-default'>00:00:26:106</span>
+<h5 class="test-status text-fail">Account Page Feature</h5>
+<span class='badge badge-success'>10.25.2022 12:26:10</span>
+<span class='badge badge-danger'>10.25.2022 12:26:26</span>
+<span class='badge badge-default'>00:00:16:288</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -404,31 +559,91 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title</div>
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>Accounts section count</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>dec2020secondbatch@gmail.com</td><td>Selenium@12345</td></tr></table>
       </div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1559360b48ad6852e1943610f0aa7728
+*** Element info: {Using=id, value=email}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Pages.LoginPage.doLogin(LoginPage.java:45)
+	at parallel.AccountsPageStep.user_has_already_logged_in_to_application(AccountsPageStep.java:27)
+	at ✽.user has already logged in to application(file:///C:/Users/bbounguicha/Downloads/pp/Cucumverpom/src/test/ressources/parallel/AccountPage.feature:4)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.AccountsPageStep.user_is_on_accounts_page()">
+              <div class="step skip-bg" title="parallel.AccountsPageStep.user_is_on_accounts_page()">
                 <span>Given user is on Accounts page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.user_gets_the_title_of_the_page()">
-                <span>When user gets the title of the page</span>
-      <div>
+              <div class="step skip-bg" title="parallel.AccountsPageStep.user_gets_accounts_section(io.cucumber.datatable.DataTable)">
+                <span>Then user gets accounts section</span>
+      <div><table class='markup-table table '><tr><td>ORDER HISTORY AND DETAILS</td></tr><tr><td>MY CREDIT SLIPS</td></tr><tr><td>MY ADDRESSES</td></tr><tr><td>MY PERSONAL INFORMATION</td></tr><tr><td>MY WISHLISTS</td></tr><tr><td>Home</td></tr></table>
+      </div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.loginStep.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "My account - My Store"</span>
+              <div class="step skip-bg" title="parallel.AccountsPageStep.accounts_section_count_should_be(java.lang.Integer)">
+                <span>And accounts section count should be 6</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1559360b48ad6852e1943610f0aa7728
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at parallel.ApplicationHook.tearDown(ApplicationHook.java:48)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -437,33 +652,89 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Accounts section count</div>
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Accounts page title</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>dec2020secondbatch@gmail.com</td><td>Selenium@12345</td></tr></table>
       </div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff122a8c554f3848dde2cbbebb0047a1
+*** Element info: {Using=id, value=email}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Pages.LoginPage.doLogin(LoginPage.java:45)
+	at parallel.AccountsPageStep.user_has_already_logged_in_to_application(AccountsPageStep.java:27)
+	at ✽.user has already logged in to application(file:///C:/Users/bbounguicha/Downloads/pp/Cucumverpom/src/test/ressources/parallel/AccountPage.feature:4)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.AccountsPageStep.user_is_on_accounts_page()">
+              <div class="step skip-bg" title="parallel.AccountsPageStep.user_is_on_accounts_page()">
                 <span>Given user is on Accounts page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.AccountsPageStep.user_gets_accounts_section(io.cucumber.datatable.DataTable)">
-                <span>Then user gets accounts section</span>
-      <div><table class='markup-table table '><tr><td>ORDER HISTORY AND DETAILS</td></tr><tr><td>MY CREDIT SLIPS</td></tr><tr><td>MY ADDRESSES</td></tr><tr><td>MY PERSONAL INFORMATION</td></tr><tr><td>MY WISHLISTS</td></tr><tr><td>Home</td></tr></table>
-      </div>
-      <div>
+              <div class="step skip-bg" title="parallel.loginStep.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.AccountsPageStep.accounts_section_count_should_be(java.lang.Integer)">
-                <span>And accounts section count should be 6</span>
+              <div class="step skip-bg" title="parallel.loginStep.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "My account - My Store"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-85GS7FK', ip: '10.70.0.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\BBOUNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff122a8c554f3848dde2cbbebb0047a1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at parallel.ApplicationHook.tearDown(ApplicationHook.java:48)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -492,7 +763,7 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@accounts</p>
 <p class="duration text-sm">2 tests</p>
@@ -500,7 +771,7 @@ eventsCount: 5,
 <div class="test-contents d-none">
 <div class="info">
 <h4>@accounts</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -511,23 +782,191 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>16:08:06 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:10 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>Accounts page title</a>
+<a href="#" class="linked" test-id='3' id='4'>Accounts section count</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts section count</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='8'>Accounts page title</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts page title</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>16:08:06 PM</td>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>9</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>9 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:13 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='9'>Accounts section count</a>
+<a href="#" class="linked" test-id='3' id='18'>Given user has already logged in to application</a>
 <div class="">
-<span class="badge badge-default">Account Page Feature.Accounts section count</span>
+<span class="badge badge-default">Account Page Feature.Accounts page title.Given user has already logged in to application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='26'>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts page title.parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='21'>Given user has already logged in to application</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts section count.Given user has already logged in to application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='31'>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts section count.parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Then forgot your password link should be displayed</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Forgot Password link.Then forgot your password link should be displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='34'>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Forgot Password link.parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>When user gets the title of the page</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login page title.When user gets the title of the page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login page title.parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with correct credentials.parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>And page of the title should be "My account - My Store"</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with correct credentials.And page of the title should be "My account - My Store"</span>
 </div>
 </td>
 </tr>
