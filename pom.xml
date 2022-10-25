@@ -20,7 +20,7 @@
 		<junit.version>4.13.1</junit.version>
 		<cucumber.version>7.0.0</cucumber.version>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
-		<maven.surefire.version>2.22.2</maven.surefire.version>
+		<maven.surefire.version>3.0.0-M1</maven.surefire.version>
 		<maven.compiler.source>1.8</maven.compiler.source> 
 <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -92,12 +92,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>${cucumber.version}</version>
-			<scope>test</scope>
-		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
@@ -113,12 +108,7 @@
 			<version>4.1.2</version>
 		</dependency>
 
-<dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <scope>provided</scope>
-        </dependency>
+
 
 	</dependencies>
 
