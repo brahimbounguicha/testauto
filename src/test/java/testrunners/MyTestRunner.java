@@ -16,6 +16,7 @@ import io.cucumber.junit.CucumberOptions;
         features = "src/test/resources/AppFeatures",
         glue = {"stepdefinition", "AppHooks"},
         plugin = {"pretty",
+        		"json:target/cucumber-reports/CucumberTestReport.json",
                 }
         )
 

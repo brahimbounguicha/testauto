@@ -1,58 +1,58 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "20df626d-393e-4a8c-b372-0c2e29c43660",
-    "feature": "Login page feature",
-    "scenario": "Login with correct credentials",
-    "start": 1666774333371,
-    "group": 23,
-    "content": "",
-    "tags": "",
-    "end": 1666774375853,
-    "className": "passed"
-  },
-  {
-    "id": "5bf6201a-ea47-46e3-92f5-4bd9d97fc952",
+    "id": "7a99546a-0f3c-4be2-9d22-f159c9931090",
     "feature": "Account Page Feature",
     "scenario": "Accounts page title",
-    "start": 1666774333374,
+    "start": 1666774704781,
     "group": 19,
     "content": "",
     "tags": "@accounts,",
-    "end": 1666774375687,
+    "end": 1666774736691,
     "className": "passed"
   },
   {
-    "id": "8806a5d1-59a2-4b7d-b46c-54b79d337118",
+    "id": "f4b32655-25b0-46cb-9bb8-d11241ba618e",
     "feature": "Account Page Feature",
     "scenario": "Accounts section count",
-    "start": 1666774333372,
+    "start": 1666774704781,
     "group": 20,
     "content": "",
     "tags": "@accounts,",
-    "end": 1666774368086,
+    "end": 1666774736952,
     "className": "passed"
   },
   {
-    "id": "dcc4c8a8-5d33-46d0-ad19-f87a917bde85",
-    "feature": "Login page feature",
-    "scenario": "Login page title",
-    "start": 1666774333369,
-    "group": 21,
-    "content": "",
-    "tags": "",
-    "end": 1666774355924,
-    "className": "passed"
-  },
-  {
-    "id": "d37788ad-e25d-4fb5-a66a-2fd5c49a2b2a",
+    "id": "53798752-831e-4211-9175-afce418aa268",
     "feature": "Login page feature",
     "scenario": "Forgot Password link",
-    "start": 1666774333317,
+    "start": 1666774704723,
     "group": 22,
     "content": "",
     "tags": "",
-    "end": 1666774353800,
+    "end": 1666774719783,
+    "className": "passed"
+  },
+  {
+    "id": "ab380a79-73c4-4eda-86f7-c8be761530e3",
+    "feature": "Login page feature",
+    "scenario": "Login with correct credentials",
+    "start": 1666774704779,
+    "group": 23,
+    "content": "",
+    "tags": "",
+    "end": 1666774738196,
+    "className": "passed"
+  },
+  {
+    "id": "69efe5c6-eb96-4a0b-a01c-02b9e8fa09fd",
+    "feature": "Login page feature",
+    "scenario": "Login page title",
+    "start": 1666774704780,
+    "group": 21,
+    "content": "",
+    "tags": "",
+    "end": 1666774719193,
     "className": "passed"
   }
 ]);
