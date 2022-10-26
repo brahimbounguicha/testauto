@@ -36,6 +36,9 @@
     <version>5.7.3</version>
 </dependency>
 
+
+
+
 <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -165,6 +168,12 @@
 				
 				<forkCount>2</forkCount> <reuseForks>true</reuseForks> <reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> 
 				</configuration> </execution> </executions> </plugin> 
+
+<plugin>
+   <groupId>net.masterthought</groupId>
+   <artifactId>maven-cucumber-reporting</artifactId>
+   <version>5.7.3</version>
+</plugin>
 
 
 <plugin>
