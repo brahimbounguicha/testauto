@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"json:target/cucumber-reports/CucumberTestReport.json",
 				"timeline:test-output-thread/"
 				}, 
 		monochrome = true,

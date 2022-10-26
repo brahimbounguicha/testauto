@@ -1,0 +1,629 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 39113605600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "dec2020secondbatch@gmail.com",
+                  "Selenium@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-26T08:52:13.374Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5139400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2981720600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Accounts page title",
+        "description": "",
+        "id": "account-page-feature;accounts-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 506900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 155549400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6657600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on Accounts page",
+            "match": {
+              "location": "parallel.AccountsPageStep.user_is_on_accounts_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1970600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "parallel.loginStep.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7913300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallel.loginStep.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@accounts"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31260019200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "parallel.AccountsPageStep.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "dec2020secondbatch@gmail.com",
+                  "Selenium@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-26T08:52:13.372Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7412100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2981720600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Accounts section count",
+        "description": "",
+        "id": "account-page-feature;accounts-section-count",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 168321100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9211400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on Accounts page",
+            "match": {
+              "location": "parallel.AccountsPageStep.user_is_on_accounts_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 216974600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user gets accounts section",
+            "match": {
+              "location": "parallel.AccountsPageStep.user_gets_accounts_section(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ORDER HISTORY AND DETAILS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY CREDIT SLIPS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY ADDRESSES"
+                ]
+              },
+              {
+                "cells": [
+                  "MY PERSONAL INFORMATION"
+                ]
+              },
+              {
+                "cells": [
+                  "MY WISHLISTS"
+                ]
+              },
+              {
+                "cells": [
+                  "Home"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33791400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "accounts section count should be 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 33
+                }
+              ],
+              "location": "parallel.AccountsPageStep.accounts_section_count_should_be(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@accounts"
+          }
+        ]
+      }
+    ],
+    "name": "Account Page Feature",
+    "description": "",
+    "id": "account-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/ressources/parallel/AccountPage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-26T08:52:13.369Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7412100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2976697000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login page title",
+        "description": "",
+        "id": "login-page-feature;login-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 315800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 279242000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19237002200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallel.loginStep.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16295900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "parallel.loginStep.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Login - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallel.loginStep.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-26T08:52:13.317Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7412100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2950430600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Forgot Password link",
+        "description": "",
+        "id": "login-page-feature;forgot-password-link",
+        "after": [
+          {
+            "result": {
+              "duration": 3316600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 210135700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17124546900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallel.loginStep.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103579800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "forgot your password link should be displayed",
+            "match": {
+              "location": "parallel.loginStep.forgot_your_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-26T08:52:13.371Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7412100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2935068400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "login-page-feature;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 501500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 186955200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19361649800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on login page",
+            "match": {
+              "location": "parallel.loginStep.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219449900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters username \"dec2020secondbatch@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dec2020secondbatch@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallel.loginStep.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164689200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters password \"Selenium@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium@12345\"",
+                  "offset": 21
+                }
+              ],
+              "location": "parallel.loginStep.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19562190300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "parallel.loginStep.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8162800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user gets the title of the home page",
+            "match": {
+              "location": "parallel.loginStep.user_gets_the_title_of_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1618600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "page of the title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 28
+                }
+              ],
+              "location": "parallel.loginStep.page_of_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/ressources/parallel/LoginPage.feature",
+    "tags": []
+  }
+]
